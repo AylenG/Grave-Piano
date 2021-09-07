@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__logo">
+            <img class="header__logo-img" id="header-img" src="./assets/logo1.png" alt="Logo Grave Piano">
+            <h1 class="header__logo-texto">Grave Piano</h1>
+        </div>
+        <nav class="header__nav" id="nav-bar">
+            <ul class="header__items">
+                <li><a class="nav-link" href="#caracteristicas">Características</a></li>
+                <li><a class="nav-link" href="#funcionamiento">Cómo funciona</a></li>
+                <li><a class="nav-link" href="#precios">Tipos y precios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main__portada">
+            <div class="main__contacto">
+                <h2 class="main__title">Una obra maestra hecha a mano</h2>
+                <h3 class="main__description">El piano es un instrumento maravilloso que vale la pena conocer de cerca;
+                    si como a nosotros te
+                    fascina la música de piano, ¡no te quedes con las ganas de aprender!</h3>
+                <h3 class="main__subtitle">¡Te contactaremos para que empieces a tocar!</h3>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" class="formulario">
+                    <input type="email" name="email" id="email" class="formulario__input" placeholder="Ingrese su mail"
+                        required>
+                    <input type="submit" value="Enviar" class="formulario__submit" id="submit">
+                </form>
+            </div>
+            <div class="main__contenedor-img">
+                <img class="main__img" src="./assets/piano.png" alt="piano">
+            </div>
+        </section>
+
+        <section class="main__caract" id="caracteristicas">
+            <h2 class="main__seccion">Caracteristicas</h2>
+            <div class="main__contenedor">
+                <article class="caract__card">
+                    <img class="caract__imagen" src="./assets/precio.png" alt="Buenos precios">
+                    <div class="caract__texto">
+                        <h3 class="caract__titulo">Buenos precios</h3>
+                        <p class="caract__descripcion">
+                            Nosotros queremos que nuestros pianos sean accesibles para cualquier persona que deseara
+                            aprender a tocar este instrumento maravilloso.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="caract__card">
+                    <img class="caract__imagen" src="./assets/entrega.png" alt="Envío rápido">
+                    <div class="caract__texto">
+                        <h3 class="caract__titulo">Envío rápido</h3>
+                        <p class="caract__descripcion">
+                            Nos aseguramos de que reciba su piano tan pronto como terminemos de fabricarlo. También
+                            ofrecemos devoluciones gratuitas si no está satisfecho.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="caract__card">
+                    <img class="caract__imagen" src="./assets/calidad.png" alt="Seguro de calidad">
+                    <div class="caract__texto">
+                        <h3 class="caract__titulo">Seguro de calidad</h3>
+                        <p class="caract__descripcion">
+                            Por cada compra que realice, nos aseguraremos de que no haya daños o fallas. Verificaremos y
+                            probaremos el tono de su instrumento.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="main__funcion" id="funcionamiento">
+            <h2 class="main__seccion">Cómo funciona</h2>
+            <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/eH5CzNSVy4M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <section class="main__precios" id="precios">
+            <h2 class="main__seccion">Tipos y precios</h2>
+            <div class="main__contenedor">
+                <article class="precios__card">
+                    <div class="precios__texto">
+                        <h3 class="precios__titulo">Piano de cola</h3>
+                        <p class="precios__descripcion">
+                            Es el más grande y voluminoso de los tres, guarda la caja de resonancia y las cuerdas de
+                            forma horizontal.
+                        </p>
+                    </div>
+                    <h3 class="precios__precio">$500 000</h3>
+                    <button class="boton">Seleccionar</button>
+                </article>
+
+                <article class="precios__card">
+                    <div class="precios__texto">
+                        <h3 class="precios__titulo">Piano de pared</h3>
+                        <p class="precios__descripcion">
+                            Tiene su caja de resonancia junto con las cuerdas en posición vertical. Su uso es más común
+                            que el de cola, puesto que ocupa menos espacio.
+                        </p>
+                    </div>
+                    <h3 class="precios__precio">$190 000</h3>
+                    <button class="boton">Seleccionar</button>
+                </article>
+
+                <article class="precios__card">
+                    <div class="precios__texto">
+                        <h3 class="precios__titulo">Piano electrónico</h3>
+                        <p class="precios__descripcion">
+                            Es el mas moderno, donde los sonidos se generan por síntesis electrónica. Estos pianos a
+                            menudo están diseñados para simular también sonidos y ritmos de otros instrumentos.
+                        </p>
+                    </div>
+                    <h3 class="precios__precio">$30 000</h3>
+                    <button class="boton">Seleccionar</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__items">
+                <li class="nav-link"><a class="footer__link" href="#">Políticas de privacidad</a></li>
+                <li class="nav-link"><a class="footer__link" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <p class="footer__copy">Copyright 2021, Grave Piano</p>
+        <div class="footer__credito">
+            <p class="footer__autor">Página creada por Gomez Aylen</p>
+            <p class="footer__favicon">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></p>
+        </div>
+    </footer>
+    
+    <script src="./js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
